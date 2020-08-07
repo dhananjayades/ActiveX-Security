@@ -1,0 +1,25 @@
+ Once an ActiveX control is downloaded by an end user  including access to the operating system’s registry and files
+ 
+ Add the following interfaces
+ 
+     public IObjectSafetySiteLockImpl
+
+        <Class, INTERFACESAFE_FOR...>,"
+
+        public IObjectSafetySiteLockImpl
+
+         <Class, INTERFACESAFE_FOR...>,"
+         
+          Add the following items in the COM_MAP section
+          
+          COM_INTERFACE_ENTRY(IObjectSafety)
+           
+           COM_INTERFACE_ENTRY(IObjectSafetySiteLock)
+           
+              Add the following in the control class:
+                 
+                 static const SiteList rgslTrustedSites[#];
+                 
+                 finally the implementation 
+                 
+                     IObjectWithSite or IOleObject
