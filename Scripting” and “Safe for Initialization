@@ -1,0 +1,13 @@
+Here’s an example of registry permission for safe for scripting
+
+     [HKEY_CLASSES_ROOT\CLSID\{CLSID of ActiveX control}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}]
+
+ safe for initialization
+ 
+   [HKEY_CLASSES_ROOT\CLSID\{CLSID of ActiveX control}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}]
+   
+  registry editor by choosing Start | Run | Regedit.
+  
+    CLSID of the ActiveX object under HKEY_CLASSES_ROOT: HKEY_CLASSES_ROOT\CLSID\{<CLSID of ActiveX Object>}
+    
+    Note that  you have to expand Implemented Categories key
